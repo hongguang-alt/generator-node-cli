@@ -1,17 +1,20 @@
 {
   "name": "generator-node-cli",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "this is generator",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "generator"
+  ],
+  "author": "wanghongguang",
+  "license": "MIT",
   "dependencies": {
     "yeoman-generator": "^5.4.2"
   },
+  "homepage": "https://github.com/hongguang-alt/generator-node-cli",
   "files": [
     "app",
     "router"
