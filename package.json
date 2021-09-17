@@ -9,7 +9,7 @@
   "keywords": [
     "generator"
   ],
-  "author": "wanghongguang",
+  "author": "hongguangwang",
   "license": "MIT",
   "dependencies": {
     "yeoman-generator": "^5.4.2"
