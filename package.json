@@ -1,5 +1,5 @@
 {
-  "name": "generator-node-cli",
+  "name": "generator-node-cli-hg",
   "version": "0.0.1",
   "description": "this is generator",
   "main": "app/index.js",
