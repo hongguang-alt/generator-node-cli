@@ -24,6 +24,10 @@ module.exports = class extends Generator {
       this.templatePath("controller/user.js"),
       this.destinationPath(`controller/user.js`)
     );
+    this.fs.copyTpl(
+      this.templatePath("public/test.json"),
+      this.destinationPath(`public/test.json`)
+    );
   }
   // 写入包
   writing() {
@@ -35,10 +39,11 @@ module.exports = class extends Generator {
       devDependencies: {},
       dependencies: {
         koa: "^2.13.1",
-        "koa-router": "^10.1.1",
+        "koa-router": "*",
         "koa-body": "^4.2.0",
         "koa2-cors": "^2.0.6",
         "koa-jwt": "^4.0.0",
+        "koa-static": "*",
       },
     };
     this.fs.extendJSON(this.destinationPath(`package.json`), pkgJson);

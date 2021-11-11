@@ -5,13 +5,17 @@ const cors = require("koa2-cors");
 const koaBody = require("koa-body");
 const koaJwt = require("koa-jwt");
 const routing = require("./router");
+const serve = require("koa-static");
+
+//解决跨域问题
+app.use(cors());
+
+//获取文件
+app.use(serve("./public"));
 
 const router = Router({
   prefix: "/api",
 });
-
-//解决跨域问题
-app.use(cors());
 
 //获取post的参数，以及可以上传文件
 app.use(
